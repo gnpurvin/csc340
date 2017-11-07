@@ -5,6 +5,8 @@
  */
 package pikoluna;
 
+import userinterfaces.RatingDialog;
+
 /**
  *
  * @author MrJimi
