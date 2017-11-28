@@ -24,7 +24,22 @@ public class JDBC {
 
         } catch (Exception Exc) {
             Exc.printStackTrace();
+            
         }
+        
+        try {
+            Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/pikolunadb", "root", "csc340");
+            Statement myStmt = myConn.createStatement();
+            myStmt.executeUpdate("TRUNCATE TABLE clonepikoluna;");
+            myStmt.executeUpdate("INSERT INTO clonepikoluna SELECT * FROM pikolunatable;");
+            ResultSet myRs = myStmt.executeQuery("select * from clonepikoluna");
+            while (myRs.next()) {
+                System.out.println(myRs.getInt("LaptopID") + " " + myRs.getString("Name") + " " + myRs.getInt("RAM") + " " + myRs.getInt("DisplaySize"));
+            }
+
+        } catch (Exception Exc) {
+            Exc.printStackTrace();
     }
 
+}
 }
