@@ -296,6 +296,9 @@ public class BobUI extends javax.swing.JFrame {
                 +" Core:"+core+"RAM Capiticity"+cap+" HDD size:"+size
                 +" Operating System:"+os+" Display:"+disType+" Resolution:"
                 +disRes+" Screen Size:"+diSize);
+        
+        Laptop laptop = new Laptop(1, "", RAMCap, DisSize, PType, HDDSize, buttonGroup1.getSelection().getActionCommand(), DisType, OSCombo, PCore, DisRes, 0.0, 0.0);
+        
     }//GEN-LAST:event_RateBtnActionPerformed
 
     /**
@@ -330,6 +333,7 @@ public class BobUI extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new BobUI().setVisible(true);
+                
             }
         });
     }
