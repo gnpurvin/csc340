@@ -1,16 +1,14 @@
 /**
  * Copyright (c) 2017, MindFusion LLC - Bulgaria.
  */
-
+package PikoLuna1;
 import java.awt.Color;
 
 import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 
-import com.mindfusion.drawing.Colors;
 import com.mindfusion.drawing.SolidBrush;
 import com.mindfusion.spreadsheet.HorizontalAlignment;
-import com.mindfusion.spreadsheet.HyperlinkType;
 import com.mindfusion.spreadsheet.IStyle;
 import com.mindfusion.spreadsheet.Measure;
 import com.mindfusion.spreadsheet.VerticalAlignment;
