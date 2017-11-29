@@ -5,11 +5,12 @@
  */
 package pikoluna1;
 
+import java.sql.*;
+
 /**
  *
  * @author Larry
  */
-import java.sql.*;
 public class JDBC {
    public static void main(String args[]) {
         try {

@@ -5,7 +5,7 @@
  */
 package pikoluna;
 
-import marketapp.RatingDialog;
+import userinterfaces.RatingDialog;
 
 /**
  *
