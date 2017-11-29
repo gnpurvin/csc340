@@ -282,7 +282,7 @@ public class BobUI extends javax.swing.JFrame {
 //        jTextField2.setText(os);
         String disType =DisType.getSelectedItem().toString();
 //        jTextField2.setText(disType);
-        int disRes = Integer.parseInt(DisRes.getSelectedItem().toString());
+        String disRes = DisRes.getSelectedItem().toString();
 //        jTextField2.setText(disRes);
         int diSize = Integer.parseInt(DisSize.getSelectedItem().toString());
 //        jTextField2.setText(diSize);
@@ -298,6 +298,7 @@ public class BobUI extends javax.swing.JFrame {
                 +disRes+" Screen Size:"+diSize);
         
         Laptop laptop = new Laptop(1, "", cap, diSize, Type, size, buttonGroup1.getSelection().getActionCommand(), disType, os, core, disRes, 0.0, 0.0);
+        new RatingDialog(laptop).setVisible(true);
         
     }//GEN-LAST:event_RateBtnActionPerformed
 

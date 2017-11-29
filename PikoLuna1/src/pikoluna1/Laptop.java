@@ -21,11 +21,11 @@ public class Laptop {
     String displayType;
     String os;
     int cpuCores;
-    int displayRes;
+    String displayRes;
     double rating;
     double price;
 
-    public Laptop(int laptopID, String name, int ram, int displaySize, String processorType, int hardDrive, String gpu, String displayType, String os, int cpuCores, int displayRes, double rating, double price){
+    public Laptop(int laptopID, String name, int ram, int displaySize, String processorType, int hardDrive, String gpu, String displayType, String os, int cpuCores, String displayRes, double rating, double price){
         this.laptopID = laptopID;
         this.name = name;
         this.ram = ram;

@@ -24,6 +24,12 @@ public class RatingDialog extends javax.swing.JFrame {
     public RatingDialog() {
         initComponents();
     }
+    
+    public RatingDialog(Laptop laptop){
+        this.rating = laptop.rating;
+        this.pricePoint = laptop.price;
+        initComponents();
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
