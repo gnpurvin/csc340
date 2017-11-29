@@ -272,19 +272,19 @@ public class BobUI extends javax.swing.JFrame {
 ;
         String Type =PType.getSelectedItem().toString();
 //        jTextField2.setText(Type);
-        String core =PCore.getSelectedItem().toString();
+        int core = Integer.parseInt(PCore.getSelectedItem().toString());
 //        jTextField2.setText(Type+core);
-        String cap =RAMCap.getSelectedItem().toString();
+        int cap = Integer.parseInt(RAMCap.getSelectedItem().toString());
 //        jTextField2.setText(cap);
-        String size =HDDSize.getText();
+        int size = Integer.parseInt(HDDSize.getText());
 //        jTextField2.setText(size)
         String os =OSCombo.getSelectedItem().toString();
 //        jTextField2.setText(os);
         String disType =DisType.getSelectedItem().toString();
 //        jTextField2.setText(disType);
-        String disRes =DisRes.getSelectedItem().toString();
+        int disRes = Integer.parseInt(DisRes.getSelectedItem().toString());
 //        jTextField2.setText(disRes);
-        String diSize =DisSize.getSelectedItem().toString();
+        int diSize = Integer.parseInt(DisSize.getSelectedItem().toString());
 //        jTextField2.setText(diSize);
 
         jRadioButton1.setActionCommand("NVIDIA GeForce");
@@ -297,7 +297,7 @@ public class BobUI extends javax.swing.JFrame {
                 +" Operating System:"+os+" Display:"+disType+" Resolution:"
                 +disRes+" Screen Size:"+diSize);
         
-        Laptop laptop = new Laptop(1, "", RAMCap, DisSize, PType, HDDSize, buttonGroup1.getSelection().getActionCommand(), DisType, OSCombo, PCore, DisRes, 0.0, 0.0);
+        Laptop laptop = new Laptop(1, "", cap, diSize, Type, size, buttonGroup1.getSelection().getActionCommand(), disType, os, core, disRes, 0.0, 0.0);
         
     }//GEN-LAST:event_RateBtnActionPerformed
 
