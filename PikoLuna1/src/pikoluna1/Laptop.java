@@ -15,7 +15,7 @@ public class Laptop {
     String name;
     int ram;
     int displaySize;
-    int processorType;
+    String processorType;
     int hardDrive;
     String gpu;
     String displayType;
@@ -25,7 +25,7 @@ public class Laptop {
     double rating;
     double price;
 
-    public Laptop(int laptopID, String name, int ram, int displaySize, int processorType, int hardDrive, String gpu, String displayType, String os, int cpuCores, int displayRes, double rating, double price){
+    public Laptop(int laptopID, String name, int ram, int displaySize, String processorType, int hardDrive, String gpu, String displayType, String os, int cpuCores, int displayRes, double rating, double price){
         this.laptopID = laptopID;
         this.name = name;
         this.ram = ram;
