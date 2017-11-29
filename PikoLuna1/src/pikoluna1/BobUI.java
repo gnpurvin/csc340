@@ -269,7 +269,8 @@ public class BobUI extends javax.swing.JFrame {
 
     private void RateBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RateBtnActionPerformed
 
-;        
+        RatingDialog d =new RatingDialog();
+        d.setVisible(true);
         String Type =PType.getSelectedItem().toString();
 //        jTextField2.setText(Type);
         int core = Integer.parseInt(PCore.getSelectedItem().toString());
