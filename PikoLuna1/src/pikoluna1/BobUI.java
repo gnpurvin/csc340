@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package pikoluna1;
-
+//import RatingDialog;
 /**
  *
  * @author Larry
@@ -269,7 +269,7 @@ public class BobUI extends javax.swing.JFrame {
 
     private void RateBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RateBtnActionPerformed
 
-;
+;        
         String Type =PType.getSelectedItem().toString();
 //        jTextField2.setText(Type);
         String core =PCore.getSelectedItem().toString();
