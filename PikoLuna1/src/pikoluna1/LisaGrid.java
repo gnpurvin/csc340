@@ -26,7 +26,7 @@ public class LisaGrid
 			public void run()
 			{
 				MainWindow window = new MainWindow();
-				window.setTitle("JSpreadsheet Sample: Database Functions");
+				window.setTitle("PikoLuna");
 				window.setVisible(true);
 			}
 		});
@@ -40,7 +40,7 @@ public class LisaGrid
 			setSize(1280, 1024);
 
 			Workbook workbook = new Workbook();
-			Worksheet worksheet = workbook.getWorksheets().add("Database Functions");
+			Worksheet worksheet = workbook.getWorksheets().add("Laptop Data");
 
 			WorksheetView view = new WorksheetView();
 			view.setWorksheet(worksheet);
